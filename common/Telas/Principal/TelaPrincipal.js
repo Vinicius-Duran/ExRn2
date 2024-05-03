@@ -11,7 +11,7 @@ const estilos = StyleSheet.create({
         backgroundColor: CORES.FUNDO_PADRAO,
         margin: 10,
         padding: 10,
-        gap: 10,
+        gap: 20,
     },
     texto: {
         color: CORES.TEXTO_PADRAO,
@@ -30,31 +30,31 @@ const TelaPrincipal = (props) => {
             <MaterialIcons name='grin-stars' size={24} color={"green"} />
         </View>
 
-        <BotaoCustomizado cor='primaria' onPress={() => props.navigation.navigate(TELAS.Tela_ConsumoVeiculos)}>
+        <BotaoCustomizado cor='1' onPress={() => props.navigation.navigate(TELAS.Tela_ConsumoVeiculos)}>
             Média consumo veículos
         </BotaoCustomizado>
 
-        <BotaoCustomizado cor='secundaria' onPress={() => props.navigation.navigate(TELAS.Tela_CambioMoeda)}>
+        <BotaoCustomizado cor='2' onPress={() => props.navigation.navigate(TELAS.Tela_CambioMoeda)}>
             Conversor de moedas
         </BotaoCustomizado>
 
-        <BotaoCustomizado cor='primaria' onPress={() => props.navigation.navigate(TELAS.Tela_ConversorMedidas)}>
+        <BotaoCustomizado cor='3' onPress={() => props.navigation.navigate(TELAS.Tela_ConversorMedidas)}>
             Conversor de medidas
         </BotaoCustomizado>
 
-        <BotaoCustomizado cor='secundaria' onPress={() => props.navigation.navigate(TELAS.Tela_MediaNotas)}>
+        <BotaoCustomizado cor='4' onPress={() => props.navigation.navigate(TELAS.Tela_MediaNotas)}>
             Calcular média de notas
         </BotaoCustomizado>
 
-        <BotaoCustomizado cor='primaria' onPress={() => props.navigation.navigate(TELAS.Tela_Calculadora)}>
+        <BotaoCustomizado cor='5' onPress={() => props.navigation.navigate(TELAS.Tela_Calculadora)}>
             Calculadora
         </BotaoCustomizado>
 
-        <BotaoCustomizado cor='secundaria' onPress={() => props.navigation.navigate(TELAS.Tela_Salario)}>
+        <BotaoCustomizado cor='6' onPress={() => props.navigation.navigate(TELAS.Tela_Salario)}>
             Calcular reajuste salarial 
         </BotaoCustomizado>
 
-        <BotaoCustomizado cor='primaria' onPress={() => props.navigation.navigate(TELAS.Tela_IMC)}>
+        <BotaoCustomizado cor='7' onPress={() => props.navigation.navigate(TELAS.Tela_IMC)}>
             Cálculo IMC
         </BotaoCustomizado>
     </View>

@@ -10,7 +10,21 @@ const CORES = {
   
     BRANCA: '#fff',
   
-    CINZA: '#99a7bb',
+    CINZA: '#808080',
+
+    AZUL: '#0000FF',
+
+    AMARELO: '#FFFF00',
+
+    VERMELHO: '#FF0000',
+
+    ROXO: '#8B008B',
+
+    VERDE_ESCURO: '#008000',
+
+    LARANJA: '#FF8C00',
+
+    PRETO : '#000'
   };
   
   export default CORES;

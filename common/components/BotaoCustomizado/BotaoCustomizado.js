@@ -84,6 +84,31 @@ const estilos = StyleSheet.create({
     color: CORES.BRANCA,
     borderRadius: -10,
   },
+  setedois: {
+    backgroundColor: CORES.CINZA,
+    borderBottomRightRadius: 70,
+    borderTopLeftRadius: 70,
+    paddingHorizontal: 15,
+    justifyContent: "center",
+    alignItems: "center",
+    paddingVertical: 10,
+    borderWidth: 5,
+    borderColor: "transparent",
+    color: CORES.BRANCA,
+    borderRadius: -10,
+  },
+  seisdois: {
+    backgroundColor: CORES.LARANJA,
+    borderBottomLeftRadius: 70,
+    borderTopRightRadius: 70,
+    paddingHorizontal: 15,
+    paddingVertical: 10,
+    borderWidth: 5,
+    borderColor: "transparent",
+    alignItems: "flex-start",
+    color: CORES.PRETO,
+    borderRadius: -10,
+  },
   textoBotao: {
     color: CORES.BRANCA,
     fontSize: 20,
@@ -121,6 +146,12 @@ const BotaoCustomizado = (props) => {
     case "7":
       estilosBotao.push(estilos.sete);
       break;
+    case "62":
+      estilosBotao.push(estilos.seisdois);
+      break;
+    case "72":
+      estilosBotao.push(estilos.setedois);
+      break;
     default:
       estilosBotao.push(estilos.botaoPadrao);
       break;
@@ -148,6 +179,12 @@ const BotaoCustomizado = (props) => {
       estilosTexto.push(estilos.textoBotao2);
       break;
     case "7":
+      estilosTexto.push(estilos.textoBotao);
+      break;
+    case "62":
+      estilosTexto.push(estilos.textoBotao2);
+      break;
+    case "72":
       estilosTexto.push(estilos.textoBotao);
       break;
     default:
